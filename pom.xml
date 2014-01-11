@@ -1,0 +1,83 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>edu.cmu.lti.oaqa</groupId>
+    <artifactId>oaqa</artifactId>
+    <version>1</version>
+  </parent>
+  <groupId>edu.cmu.cs.ziy</groupId>
+  <artifactId>disgenet-analyzer</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>DisGeNET Analyzer</name>
+  <description>Analysis Code for DisGeNET (http://ibi.imim.es/DisGeNET)</description>
+  <url>https://github.com/ziy/disgenet-analyzer</url>
+  <issueManagement>
+    <system>github.com</system>
+    <url>https://github.com/ziy/disgenet-analyzer/issues</url>
+  </issueManagement>
+  <inceptionYear>2013</inceptionYear>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <scm>
+    <url>git@github.com:ziy/disgenet-analyzer.git</url>
+    <connection>scm:git:git@github.com:ziy/disgenet-analyzer.git</connection>
+    <developerConnection>scm:git:git@github.com:ziy/disgenet-analyzer.git</developerConnection>
+  </scm>
+  <repositories>
+    <repository>
+      <id>oaqa</id>
+      <url>http://mu.lti.cs.cmu.edu:8081/nexus/content/groups/public</url>
+    </repository>
+    <repository>
+      <id>sonatype-nexus-snapshots</id>
+      <name>Sonatype Nexus Snapshots</name>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.6</source>
+          <target>1.6</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>16.0-rc1</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+    </dependency>
+    <dependency>
+      <groupId>org.tmatesoft.sqljet</groupId>
+      <artifactId>sqljet</artifactId>
+      <version>1.1.8</version>
+    </dependency>
+    <dependency>
+      <groupId>org.yaml</groupId>
+      <artifactId>snakeyaml</artifactId>
+      <version>1.13</version>
+    </dependency>
+  </dependencies>
+</project>
