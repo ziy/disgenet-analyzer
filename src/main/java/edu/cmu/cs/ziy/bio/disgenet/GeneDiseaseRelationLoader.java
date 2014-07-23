@@ -46,10 +46,11 @@ public class GeneDiseaseRelationLoader {
       "MGD_M_assocDiseaseNames",
       "CTD_MOUSE_M_assocDiseaseNames",
       "CTD_MOUSE_T_assocDiseaseNames",
-      "LHGDN_M_assocDiseaseNames",
-      "LHGDN_GV_assocDiseaseNames",
-      "LHGDN_AE_assocDiseaseNames",
-      "LHGDN_MP_assocDiseaseNames" };
+  // "LHGDN_M_assocDiseaseNames",
+  // "LHGDN_GV_assocDiseaseNames",
+  // "LHGDN_AE_assocDiseaseNames",
+  // "LHGDN_MP_assocDiseaseNames"
+  };
 
   public Table<String, String, List<String>> getRelationFromGeneAttributes() throws SqlJetException {
     ISqlJetCursor cursor = db.getTable(GENE_ATTRIBUTES_TABLE_NAME).open();
